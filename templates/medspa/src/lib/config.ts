@@ -2,162 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "slate",
-  niche: "medspa",
-  name: "Lumière Med Spa",
-  tagline: "Where Science Meets Beauty.",
-  phone: "(555) 456-7890",
-  phoneHref: "tel:+15554567890",
-  email: "hello@lumieremedspa.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Mountain House", "Dublin", "Pleasanton"],
-  license: "CA MED #98765",
-  since: "2015",
-  google_rating: "5.0",
-  review_count: "234",
-  emergency: false,
-  social: {
-    google: "https://google.com",
-    yelp: "https://yelp.com",
-    facebook: "https://facebook.com",
+    name: "VIO Med Spa",
+    tagline: "Rejuvenate. Enhance. Feel Beautiful.",
+    phone: "(209) 876-8420",
+    phoneHref: "tel:+12098768420",
+    email: "info@viomedspa.com",
+    address: "123 Main St",
+    city: "Modesto",
+    serviceAreas: ["Modesto", "Ceres", "Turlock"],
+    license: "CA Medical License #123456",
+    since: "2018",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "noir",
+    niche: "medspa",
   },
-},
 
   services: [
-  {
-    icon: "sparkles",
-    title: "Botox & Fillers",
-    desc: "Natural-looking wrinkle reduction and volume restoration. Board-certified injectors. Results you'll love.",
-    urgent: false,
-  },
-  {
-    icon: "zap",
-    title: "Laser Hair Removal",
-    desc: "Permanent hair reduction on all skin types. 6-session packages with dramatic, lasting results.",
-    urgent: false,
-  },
-  {
-    icon: "droplets",
-    title: "HydraFacial",
-    desc: "Deep cleanse, extract, and hydrate in 30 minutes. Instant glow. Zero downtime. A client favorite.",
-    urgent: false,
-  },
-  {
-    icon: "sun",
-    title: "Chemical Peels",
-    desc: "Resurface and renew with medical-grade peels. Treat acne, hyperpigmentation, and fine lines.",
-    urgent: false,
-  },
-  {
-    icon: "activity",
-    title: "Microneedling",
-    desc: "Stimulate collagen naturally. Treats scars, texture, and signs of aging. PRP add-on available.",
-    urgent: false,
-  },
-  {
-    icon: "star",
-    title: "Body Contouring",
-    desc: "Non-surgical fat reduction and skin tightening. Sculpt your silhouette without surgery or downtime.",
-    urgent: false,
-  },
-],
+    { icon: "star", title: "Botox® & Dysport®", desc: "Smooth away wrinkles and fine lines for a refreshed, youthful appearance.", urgent: false },
+    { icon: "heart", title: "Dermal Fillers", desc: "Restore volume, enhance contours, and achieve a natural, lifted look with Juvederm® and Restylane.", urgent: false },
+    { icon: "sparkles", title: "Hydrafacial", desc: "Deeply cleanse, extract, and hydrate your skin for an instant glow and lasting radiance.", urgent: false },
+    { icon: "shield-check", title: "Microneedling", desc: "Stimulate collagen production and improve skin texture, tone, and firmness with Pixel8 RF and SkinPen.", urgent: false },
+    { icon: "scissors", title: "Laser Hair Removal", desc: "Achieve long-lasting smooth skin with our advanced laser technology, safe for various skin types.", urgent: false },
+    { icon: "thermometer", title: "PRF Hair Restoration", desc: "Naturally stimulate hair growth and improve hair density for a fuller, healthier head of hair.", urgent: false }
+  ],
 
   testimonials: [
-  {
-    name: "Amanda W.",
-    location: "Tracy, CA",
-    stars: 5,
-    text: "My Botox looks so natural — exactly what I wanted. The injector took so much time to understand my goals. I've been coming back every 4 months for 2 years.",
-  },
-  {
-    name: "Priya K.",
-    location: "Stockton, CA",
-    stars: 5,
-    text: "Laser hair removal changed my life. After 6 sessions, I'm basically hair-free. The staff made me feel comfortable the entire time.",
-  },
-  {
-    name: "Rachel D.",
-    location: "Dublin, CA",
-    stars: 5,
-    text: "Monthly HydraFacials have completely transformed my skin. I get compliments constantly. Worth every single penny.",
-  },
-],
+    { name: "Sarah L.", location: "Modesto, CA", stars: 5, text: "I had a Hydrafacial at VIO Med Spa and my skin has never looked better! The esthetician was incredibly knowledgeable and made me feel so comfortable. My skin felt plump and radiant for weeks after. Highly recommend!" },
+    { name: "Mark T.", location: "Ceres, CA", stars: 5, text: "The Botox treatment I received here was fantastic. It looked completely natural, and the results were exactly what I wanted. The staff is professional, and the facility is beautiful. I'm so happy I found VIO Med Spa." },
+    { name: "Jessica R.", location: "Turlock, CA", stars: 5, text: "I've been coming to VIO Med Spa for laser hair removal for months now, and the results are amazing. The process is quick, and the technicians are always so kind and efficient. It's truly a luxurious experience every time." }
+  ],
 
   trustBadges: [
-  "Board-Certified Providers",
-  "FDA-Approved Treatments",
-  "Medical-Grade Products",
-  "Free Consultations",
-  "Financing Available",
-  "5-Star Rated on Google",
-],
+    "Board-Certified Practitioners", "Personalized Treatment Plans", "Advanced Technology", "CLUBVIO Membership Program", "Financing Options Available"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1170,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 11,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 5000, label: "Happy Clients", suffix: "+", decimals: 0 },
+    { value: 5, label: "Years Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI concierge books treatments, answers service questions, and collects reviews via call, text, or WhatsApp. Available 24/7, never a wait."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "award", title: "Expert Practitioners", desc: "Our team consists of highly trained and certified medical professionals dedicated to your aesthetic goals." },
+    { icon: "heart", title: "Personalized Care", desc: "We create custom treatment plans tailored to your unique needs and desired outcomes." },
+    { icon: "sparkles", title: "Luxurious Environment", desc: "Experience your treatments in a serene, upscale setting designed for ultimate comfort and relaxation." },
+    { icon: "shield-check", title: "Cutting-Edge Technology", desc: "We utilize the latest advancements in aesthetic medicine for safe, effective, and superior results." },
+    { icon: "dollar-sign", title: "Flexible Financing", desc: "Achieve your beauty goals with convenient payment plans and membership options." },
+    { icon: "thumbs-up", title: "Exceptional Results", desc: "We are committed to delivering natural-looking, transformative results that enhance your confidence." }
+  ],
 
-  formServiceOptions: [
-  "Botox & Fillers",
-  "Laser Hair Removal",
-  "HydraFacial",
-  "Chemical Peels",
-  "Microneedling",
-  "Body Contouring"
-],
+  formServiceOptions: ["Aesthetic Wellness Quiz", "Botox®", "Dysport®", "Jeuveau®", "Juvederm®", "PRF EZ Gel", "Restylane", "RHA® Collection", "Platelet-Rich Plasma (PRP)", "Sculptra®", "Dermaplaning", "Hydrafacial", "VIO Signature Facial", "Pixel8 RF Microneedling", "SkinPen Microneedling", "Erbium", "LED Light Therapy", "Pix:E Laser Treatment", "VI Peel", "Hydrafacial Keravive", "Laser Hair Removal", "PRF Hair Restoration"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
